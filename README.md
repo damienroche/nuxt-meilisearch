@@ -43,7 +43,7 @@ pnpm add nuxt-meilisearch
 
 Then, update your `nuxt.config.ts`:
 
- ```ts{}[nuxt.config.ts]
+ ```ts
 export default defineNuxtConfig({
   modules: [
     'nuxt-meilisearch'
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
 
 This example performs a search in the `books` index:
 
-```html{}[pages/index.vue]
+```html
 <script setup>
 const { search, result } = useMeiliSearch('books')
 
